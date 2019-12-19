@@ -65,8 +65,14 @@
 .size-2rem{
   font-size: 2rem!important;
 }
+.size-25rem{
+  font-size: 2.5rem!important;
+}
 .size-3rem{
   font-size: 3rem!important;
+}
+.size-35rem{
+  font-size: 3.5rem!important;
 }
 .size-4rem{
   font-size: 4rem!important;
@@ -74,23 +80,11 @@
 .size-5rem{
   font-size: 5rem!important;
 }
-.size-35rem{
-  font-size: 3.5rem!important;
-}
 .size-9rem{
   font-size: 9rem!important;
 }
 .size-19px{
   font-size: 19px!important;
-}
-.size-p8rem{
-  font-size: .8rem!important;
-}
-.size-25rem{
-  font-size: 2.5rem!important;
-}
-.size-p9rem{
-  font-size: .9rem!important;
 }
 .btn-azul{
   background-color: #1D5273!important;
@@ -133,9 +127,6 @@
   font-weight: 600!important;
   font-size: .9rem !important;
 }
-.semBorda{
-  border:0!important;
-}
 .form-control{
   color: #000000;
 }
@@ -153,48 +144,15 @@ label:not(.active){
 main{
   font-family: 'Montserrat', sans-serif;
 }
-/*Navbar Animation*/
-.top-nav-collapse{
-  background-color: #554A26!important;
-}
-.navbar-preenchida{
-  background-color: #554A26!important;
-  padding-top: 5px!important;
-  padding-bottom: 5px!important;
-}
-/*Modais*/
 @media (max-width: 370px) {
   .titulo-intro{
     font-size: 2.5rem!important;
   }
-  .titulo-intro2{
-    font-size: 1.5rem!important;
-  }
   .text-intro {
     font-size: .9rem!important;
   }
-  .size4texto-atendimento{
-    font-size: 12px!important;
-  }
-  .size4icon-atendimento{
-    font-size: 20px!important;
-  }
-  .sizelabel-atendimento{
-    font-size: 12px!important;
-  }
-  .p-0-responsive{
-    padding-left: 0!important;
-    padding-right: 0!important;
-  }
 }
-.carousel-control-prev-customPosition{
-  left: -15px;
-  width: min-content;
-}
-.carousel-control-next-customPosition{
-  right: -15px;
-  width: min-content;
-}
+/*Modal Fluid Custom*/
 @media (max-width: 425px) {
   .modal-dialog.cascading-modal{
     margin-top: 15% !important;
@@ -225,22 +183,21 @@ main{
     margin-top: 3% !important;
   }
 }
-.maxh31{
-  max-height: 31vh!important;
-}
-.maxw85{
-  max-width: 85vw!important;
-}
-.maxh75{
-  max-height: 75vh!important;
-}
+/*Carousel Custom*/
 .carousel-thumbnails-custom .carousel-indicators{
   margin-bottom: -70px;
 }
 .carousel-thumbnails-custom .carousel-indicators img{
   height: 50px;
 }
-
+.carousel-control-prev-customPosition{
+  left: -15px;
+  width: min-content;
+}
+.carousel-control-next-customPosition{
+  right: -15px;
+  width: min-content;
+}
 /*Home-Banners*/
 .bg-banner-1{
   background-image: url('../assets/banner-1-institucional.jpg');
@@ -319,85 +276,6 @@ main{
     background-size: cover;
   }
 }
-/*Atendimento ao Cliente*/
-body, html {
-  height: 100%;
-}
-.bg-atendimento-cliente-slide1 {
-  background-image: url("../assets/atendimento-ao-cliente-tela1.jpg");
-  height: calc(100vh - 70px);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bg-atendimento-cliente-slide2 {
-  background-image: url("../assets/atendimento-ao-cliente-tela2.jpg");
-  height: calc(100vh - 70px);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#areaDeAtendimento-slide3{
-  min-height: calc(100vh - 70px);
-}
-.hideSection{
-  display: none;
-}
-/*FixedBTN*/
-.fixed-action-btn.active ul {
-  height: calc(100% + 80px);
-}
-#fixed-btn-itens-pc .btn-floating{
-  width:auto !important;
-  height: 100% !important;
-  -webkit-border-radius: 10em !important;
-  border-radius: 10em !important;
-  margin: 0.375rem auto 0.375rem auto !important;
-  border: 0!important;
-  cursor: pointer!important;
-  text-transform: uppercase!important;
-  white-space: normal!important;
-  word-wrap: break-word!important;
-  color: #fff!important;
-}
-#fixed-btn-itens-pc .btn-floating i{
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  width: auto;
-}
-#fixed-btn-itens-pc .btn-floating strong{
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  width: auto;
-}
-@media (max-width: 767px) {
-  #fixed-btn-pc{
-    display: none !important;
-  }
-  #fixed-btn-itens-pc{
-    display: none !important;
-  }
-  #fixed-btn-mobile{
-    display: inherit !important;
-  }
-  #fixed-btn-itens-mobile{
-    display: inherit !important;
-  }
-}
-@media (min-width: 768px) {
-  #fixed-btn-pc{
-    display: inherit !important;
-  }
-  #fixed-btn-itens-pc{
-    display: inherit !important;
-  }
-  #fixed-btn-mobile{
-    display: none !important;
-  }
-  #fixed-btn-itens-mobile{
-    display: none !important;
-  }
-}
 @media (min-width: 1200px){
   .titulos{
     font-size: 200%;
@@ -406,64 +284,10 @@ body, html {
     max-width: 1460px!important;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.disabled{
-  display: none!important;
+/*Navbar Animation*/
+.top-nav-collapse{
+  background-color: #554A26!important;
 }
-/* Navbar animation */
-.navbar {
-  background-color: #3b1a3733;
-}
-.top-nav-collapse {
-  background-color: #3b1a37f2;
-}
-/* Adding color to the Navbar on mobile */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #3b1a37f2;
-  }
-}
-/* Footer color for sake of consistency with Navbar */
-.page-footer {
-  background-color: #3b1a37;
-}
-/*Footer Coleta lead*/
-footer .md-form.input-group label{
-  top: 15%!important;
-}
-/*Hamburguer Menu Animation*/
-/* Icon 1 */
 .animated-icon1, .animated-icon2, .animated-icon3 {
   width: 30px;
   height: 20px;
@@ -532,7 +356,6 @@ footer .md-form.input-group label{
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-/* Icon 3*/
 .animated-icon2 span:nth-child(1) {
   top: 0;
 }
@@ -564,7 +387,6 @@ footer .md-form.input-group label{
   width: 0;
   left: 50%;
 }
-/* Icon 4 */
 .animated-icon3 span:nth-child(1) {
   top: 0;
   -webkit-transform-origin: left center;
@@ -637,6 +459,12 @@ footer .md-form.input-group label{
 /*Utilidades*/
 .border-3px{
   border: 3px solid #dee2e6;
+}
+.disabled{
+  display: none!important;
+}
+.hideSection{
+  display: none;
 }
 .btn-outline-verde{
   border: 2px solid #2d3a12!important;
@@ -712,62 +540,9 @@ footer .md-form.input-group label{
 .transparencia-gradiente-verdeRoxo{
   background: linear-gradient(40deg,#66ab00a3,#712eadc7);
 }
-/*HOME - Serviços*/
-.activador-custom{
-  position: static!important;
-  right: auto!important;
-}
-.img-servicos-home{
-  z-index: -2;
-}
-/*HOME - FAQ*/
-#home-faq{
-  background-color: #f6f6f6;
-}
-.numero-faq{
-  color: #90ba38;
-}
-.pergunta-faq{
-  color: #2d3a12;
-}
-.botao-faq{
-  color: #2d3a12!important;
-  font-weight: 600!important;
-}
-.collapse-content a.collapsed:after {
-  content: 'Continuar Lendo' !important;
-}
-.collapse-content a:not(.collapsed):after {
-  content: 'Entendi'
-}
-/*HOME-PORTIFOLIO*/
-.cta-carousel-clientes-wrapper{
-  margin-bottom: 2rem;
-}
-.carousel-indicators-customClientes{
-  margin-bottom: 0;
-}
-
-
-/*MODAL HOME FAQ*/
-.bg-azul-medio {
-  background-color: #08399B;
-}
-.btn-outline-neutro {
-  border: 2px solid #5e5e5e!important;
-  background-color: transparent!important;
-  color: #5e5e5e!important;
-}
 /*SOLICITAR ORÇAMENTO*/
 body#body-solicitarOrcamento{
   height: 100%;
-}
-#videoBg-solicitarOrcamento {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
 }
 .content-solicitarOrcamento {
   position: inherit;
