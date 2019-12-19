@@ -1,0 +1,36 @@
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+html,body,.view {
+  height: 100%;
+}
+/* Half Page Carousel itself*/
+.carousel-halfPage {
+  height: 75vh;
+}
+.carousel-halfPage .carousel-inner {
+  height: 100%;
+}
+.carousel-halfPage .carousel-inner .carousel-item, .carousel-halfPage .carousel-inner .active {
+  height: 100%;
+}
+/* Adjustment for mobile devices*/
+@media (max-width: 740px) {
+  .carousel-halfPage {
+    height: 100vh;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html, body, header, .carousel-halfPage {
+    height: 100vh;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #554A26!important;
+  }
+}
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #554A26;
+  }
+}

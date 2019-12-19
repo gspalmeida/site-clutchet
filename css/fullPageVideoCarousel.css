@@ -1,0 +1,44 @@
+#carousel-intro-home{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+#carousel-intro-solicitarOrcamento{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bg-img-abaixoVideo-home {
+  background-image: url("../assets/bg-atendimento-cliente.mp4");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: -500;
+}
+.bg-img-abaixoVideo-solicitarOrcamento {
+  background-image: url("../assets/bg-atendimento-cliente.mp4");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon {
+  width: 60px;
+  height: 60px;
+}
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+html,body,.view {
+  height: 100%;
+}
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%;
+}
+.carousel .carousel-inner {
+  height: 100%;
+}
+.carousel .carousel-inner .carousel-item, .carousel .carousel-inner .active {
+  height: 100%;
+}

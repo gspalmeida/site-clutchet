@@ -1,0 +1,87 @@
+<footer class="page-footer font-small mdb-color color-rosa-footer pt-4" id="contato">
+  <div class="container">
+    <section class="pb-2">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-12 text-center mb-3">
+          <img src="assets/logo-provisório-footer.png" style="max-width: 100%!important">
+        </div>
+        <div class="col-lg-4 col-12">
+          <h2 class="font-weight-bold text-center h2-responsive texto-que-parece-azul pb-2">Nossa Marca</h2>
+          <h2 class="text-center font-weight-bolder h5-responsive texto-que-parece-preto">
+            A Clutchet bolsas é uma marca que atua no segmento de moda de luxo, confeccionando
+            bolsas
+            de crochê feitas a mão, para mulheres luxuosas e com gostos refinados, atendendo
+            todo o país
+            e com forte atuação no sul e sudeste brasileiro.
+          </h2>
+        </div>
+        <div class="row d-none d-md-flex mt-3 mb-5 mx-auto">
+          <div class="d-sm-block">
+            <ul class="list-unstyled text-center">
+              <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto" href="index.html">HOME</a></li>
+              <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto" href="galeria.html">GALERIA</a></li>
+              <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto" href="https://clutchet-bolsas.lojaintegrada.com.br/">LOJA</a></li>
+              <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto" data-toggle="modal" data-target="#modalEntreEmContatoFooter">CONTATO</a></li>
+              <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto">TROCAS/DEVOLUÇÕES</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row d-md-none mx-auto">
+          <div class="d-sm-block container">
+            <ul class="list-unstyled text-center">
+              <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto" href="index.html">HOME</a></li>
+              <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto" href="galeria.html">GALERIA</a></li>
+              <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto" href="https://clutchet-bolsas.lojaintegrada.com.br/">LOJA</a></li>
+              <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto" data-toggle="modal" data-target="#modalEntreEmContatoFooter">CONTATO</a></li>
+              <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto">TROCAS/DEVOLUÇÕES</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--        <div >
+                  <ul class="list-unstyled text-center">
+                    <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto">FAQ</a></li>
+                    <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto" data-toggle="modal" data-target="#modalNewsletter">NEWSLETTER</a></li>
+                    <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto">TROCAS</a></li>
+                    <li class="pb-1"><a class="font-weight-bold text-center h3-responsive pb-1 size-12rem texto-que-parece-preto">GIFT-CARD</a></li>
+                  </ul>
+                </div>-->
+      </div>
+    </section>
+  </div>
+  <div class="footer-copyright py-4 text-center transparencia-marrom">
+    <p class="mb-0 animated pulse infinite slow delay-2s">
+      <a class="texto-marrom-escuro fw-400" href="http://galileosoft.com.br" target="_blank">Copyright © 2019 <spam class="fw-600">GalileoSoft</spam></a>
+    </p>
+  </div>
+</footer>
+
+<script>
+    //    ScrolSpy da Navbar
+    var pagina = window.location.pathname;
+    var start = pagina.lastIndexOf("/");
+    var stop = pagina.lastIndexOf(".");
+    if(pagina.substr(start+1,stop-start-1)==='') {
+        $(document).ready(function () {
+            $('#navbar-index').addClass('active');
+        });
+    }else{
+        $(document).ready( function () {
+            $('#navbar-' + pagina.substr(start + 1, stop - start - 1)).addClass('active');
+        });
+    }
+    //    ScrollToTop Navbar
+    function scrollToTop() {
+        $('body, html').animate({scrollTop: 0});
+    }
+    // Material Select Initialization
+    $(document).ready(function() {
+        $('.mdb-select').materialSelect();
+    });
+    function verificaSelect(selectAssunto){
+        if (selectAssunto.value === "4") {
+            $(".campoExtraSelected").removeClass('d-none');
+        } else {
+            $(".campoExtraSelected").addClass('d-none');
+        }
+    }
+</script>

@@ -1,0 +1,296 @@
+<section id="modal-entreEmContato">
+  <div class="modal fade" id="modalEntreEmContato" tabindex="-1" role="dialog" aria-labelledby="modalEntreEmContato" aria-hidden="true">
+    <div class="modal-dialog modal-top cascading-modal" role="document">
+      <div class="modal-content">
+        <div class="modal-header color-marrom-escuro-fixedBtn white-text">
+          <p class="h2-responsive title fw-500 size-15rem">Como podemos te ajudar?</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body mb-0 text-center">
+          <div class="pt-0">
+            <form class="text-center">
+              <div class="md-form mt-4">
+                <input type="text" id="modalEntreEmContato-nome" class="form-control">
+                <label for="modalEntreEmContato-nome">Nome</label>
+              </div>
+              <div class="md-form">
+                <input type="email" id="modalEntreEmContato-email" class="form-control">
+                <label for="modalEntreEmContato-email">E-mail</label>
+              </div>
+              <select id="modalEntreEmContato-assunto" class="mdb-select md-form colorful-select dropdown-ins" onchange="verificaSelect(this)">
+                <option value="" disabled selected>Do que se trata o seu contato?</option>
+                <option value="1">Sou Cliente</option>
+                <option value="2">Quero ser uma Representante</option>
+                <option value="3">Quero trabalhar na Produção</option>
+                <option value="4">Outro</option>
+              </select>
+              <div class="md-form d-none" id="campoExtraAssunto">
+                <input type="text" id="modalEntreEmContato-outroAssunto" class="form-control">
+                <label for="modalEntreEmContato-outroAssunto">Assunto</label>
+              </div>
+              <div class="md-form amber-textarea active-amber-textarea">
+                <textarea type="text" id="modalEntreEmContato-mensagem" class="md-textarea form-control" rows="3"></textarea>
+                <label for="modalEntreEmContato-mensagem">Digite aqui a sua mensagem</label>
+              </div>
+              <div class="btn-wrapper">
+                <button class="btn btn-outline-azulEsverdeado btn-rounded btn-block z-depth-1 my-4 size-1rem waves-effect" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="modal-entreEmContatoFooter">
+  <div class="modal fade" id="modalEntreEmContatoFooter" tabindex="-1" role="dialog" aria-labelledby="modalEntreEmContatoFooter" aria-hidden="true">
+    <div class="modal-dialog modal-top cascading-modal" role="document">
+      <div class="modal-content">
+        <div class="modal-header color-marrom-escuro-fixedBtn white-text">
+          <p class="h2-responsive title fw-500 size-15rem">Como podemos te ajudar?</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body mb-0 text-center">
+          <div class="pt-0">
+            <form class="text-center">
+              <div class="md-form mt-4">
+                <input type="text" id="modalEntreEmContatoFooter-nome" class="form-control">
+                <label for="modalEntreEmContatoFooter-nome">Nome</label>
+              </div>
+              <div class="md-form">
+                <input type="email" id="modalEntreEmContatoFooter-email" class="form-control">
+                <label for="modalEntreEmContatoFooter-email">E-mail</label>
+              </div>
+              <select id="modalEntreEmContatoFooter-assunto" class="mdb-select md-form colorful-select dropdown-ins">
+                <option value="" disabled selected>Do que se trata o seu contato?</option>
+                <option value="1">Sou Cliente</option>
+                <option value="2">Quero ser uma Representante</option>
+                <option value="3">Quero trabalhar na Produção</option>
+                <option value="4">Outro</option>
+              </select>
+              <div class="md-form d-none" id="campoExtraAssunto">
+                <input type="text" id="modalEntreEmContatoFooter-outroAssunto" class="form-control">
+                <label for="modalEntreEmContatoFooter-outroAssunto">Assunto</label>
+              </div>
+              <div class="md-form amber-textarea active-amber-textarea">
+                <textarea type="text" id="modalEntreEmContatoFooter-mensagem" class="md-textarea form-control" rows="3"></textarea>
+                <label for="modalEntreEmContatoFooter-mensagem">Digite aqui a sua mensagem</label>
+              </div>
+              <div class="btn-wrapper">
+                <button class="btn btn-outline-azulEsverdeado btn-rounded btn-block z-depth-1 my-4 waves-effect" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="modal-newsletter">
+  <div class="modal fade" id="modalNewsletter" tabindex="-1" role="dialog" aria-labelledby="modalNewsletter" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-side modal-bottom-right" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">NewsLetter</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <p class="text-center" style="font-size: 1.1rem">Você esta entrando na lista de Email da Clutchet.</p>
+          <p class="text-center" style="font-size: 1.1rem">Nós escrevemos pouco, mas são ofertas imperdíveis.</p>
+
+          <div class="md-form mb-5">
+            <i class="fa fa-user prefix grey-text"></i>
+            <input type="text" id="modalNewsletter-nome" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="modalNewsletter-nome" style="font-size: 1.1rem" class="fw-500">Seu Nome</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fa fa-envelope prefix grey-text"></i>
+            <input type="email" id="modalNewsletter-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="modalNewsletter-email" style="font-size: 1.1rem" class="fw-500">Seu email</label>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button id="modalNewsletter-enviar" class="btn color-marrom-escuro-fixedBtn">Enviar <i class="fa fa-paper-plane-o ml-1"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="modal-monteSuaClutchet">
+  <div class="modal fade" id="modalMonteSuaClutchet" tabindex="-1" role="dialog" aria-labelledby="modalMonteSuaClutchet" aria-hidden="true">
+    <div class="modal-dialog modal-top cascading-modal" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="text-center">
+            <h4 class="text-center align-self-center mt-3 size-15rem font-weight-bold col-12">
+              Peça sua Clutchet
+            </h4>
+            <h6 class="col-12">Bolsas sob encomenda a partir de R$: 320,00</h6>
+          </div>
+          <hr>
+          <div class="form">
+            <div class="mb-5">
+              <p class="text-center">
+                Quando se põe carinho em cada ponto, uma bolsa de crochê é bem mais do que artesanato.
+              </p>
+              <p class="text-center">
+                Diga-nos como imagina sua clutchet e deixe seu contato, retornaremos em breve para combinarmos direitinho!
+              </p>
+            </div>
+            <div class="md-form mb-5">
+              <i class="fas fa-user prefix grey-text"></i>
+              <input type="text" id="orangeForm-name" class="form-control validate">
+              <label for="orangeForm-name">Seu nome</label>
+            </div>
+            <div class="md-form mb-5">
+              <i class="fas fa-user prefix grey-text"></i>
+              <input type="text" id="orangeForm-tel" class="form-control validate">
+              <label for="orangeForm-tel">Seu telefone</label>
+            </div>
+            <div class="md-form mb-5">
+              <i class="fas fa-envelope prefix grey-text"></i>
+              <input type="text" id="orangeForm-email" class="form-control validate">
+              <label for="orangeForm-email">Seu e-mail</label>
+            </div>
+
+            <div class="md-form mb-4">
+              <i class="fab fa-instagram prefix grey-text"></i>
+              <input type="text" id="orangeForm-pass" class="form-control validate">
+              <label for="orangeForm-pass">Seu instagram (opcional)</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fas fa-paragraph prefix grey-text"></i>
+              <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+              <label data-error="wrong" data-success="right" for="form8">Conte-nos um pouco sobre como imaginou sua Clutchet Personalizada</label>
+            </div>
+
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary">ENVIAR</button>
+          </div>
+
+        </div>
+
+      </div>
+      <!--<div class="container-fluid flex-center fix-flexCenter-height ">
+      <div class="content-solicitarOrcamento container-fluid">
+        <div class="row flex-center">
+          <div class="col-12 col-md-6 mb-4 ">
+            <div class="container">
+              <div class="modal-dialog cascading-modal" role="document">
+                <div class="modal-content">
+                  <div class="modal-c-tabs">
+                    <h4 class="text-center align-self-center mt-3 size-15rem font-weight-bold">
+                      Peça sua Clutchet
+                    </h4>
+                    <hr>
+                    <div class="modal-body mx-3">
+                      <div class="mb-5">
+                        <p class="text-center">
+                          Quando se põe carinho em cada ponto, uma bolsa de crochê é bem mais do que artesanato.
+                        </p>
+                        <p class="text-center">
+                          Diga-nos como imagina sua clutchet e deixe seu contato, retornaremos em breve para combinarmos direitinho!
+                        </p>
+                      </div>
+                      <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="orangeForm-name" class="form-control validate">
+                        <label for="orangeForm-name">Seu nome</label>
+                      </div>
+                      <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="text" id="orangeForm-email" class="form-control validate">
+                        <label for="orangeForm-email">Seu e-mail</label>
+                      </div>
+
+                      <div class="md-form mb-4">
+                        <i class="fab fa-instagram prefix grey-text"></i>
+                        <input type="text" id="orangeForm-pass" class="form-control validate">
+                        <label for="orangeForm-pass">Seu instagram</label>
+                      </div>
+
+                      <div class="md-form">
+                        <i class="fas fa-paragraph prefix grey-text"></i>
+                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                        <label data-error="wrong" data-success="right" for="form8">Conte-nos um pouco mais sobre como imaginou sua Clutchet Personalizada</label>
+                      </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button class="btn btn-primary">ENVIAR</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container-fluid flex-center fix-flexCenter-height ">
+      <div class="content-solicitarOrcamento container-fluid">
+        <div class="row flex-center">
+          <div class="col-12 col-md-6 mb-4 ">
+            <div class="container">
+              <div class="modal-dialog cascading-modal" role="document">
+                <div class="modal-content">
+                  <div class="modal-c-tabs">
+                    <h4 class="text-center align-self-center mt-3 size-15rem font-weight-bold">
+                      Peça sua Clutchet
+                    </h4>
+                    <hr>
+                    <div class="modal-body mx-3">
+                      <div class="mb-5">
+                        <p class="text-center">
+                          Quando se põe carinho em cada ponto, uma bolsa de crochê é bem mais do que artesanato.
+                        </p>
+                        <p class="text-center">
+                          Diga-nos como imagina sua clutchet e deixe seu contato, retornaremos em breve para combinarmos direitinho!
+                        </p>
+                      </div>
+                      <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="orangeForm-name" class="form-control validate">
+                        <label for="orangeForm-name">Seu nome</label>
+                      </div>
+                      <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="text" id="orangeForm-email" class="form-control validate">
+                        <label for="orangeForm-email">Seu e-mail</label>
+                      </div>
+
+                      <div class="md-form mb-4">
+                        <i class="fab fa-instagram prefix grey-text"></i>
+                        <input type="text" id="orangeForm-pass" class="form-control validate">
+                        <label for="orangeForm-pass">Seu instagram</label>
+                      </div>
+
+                      <div class="md-form">
+                        <i class="fas fa-paragraph prefix grey-text"></i>
+                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                        <label data-error="wrong" data-success="right" for="form8">Conte-nos um pouco mais sobre como imaginou sua Clutchet Personalizada</label>
+                      </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button class="btn btn-primary">ENVIAR</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+    </div>
+  </div>
+</section>
