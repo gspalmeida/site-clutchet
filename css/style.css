@@ -200,38 +200,38 @@ main{
 }
 /*Home-Banners*/
 .bg-banner-1{
-  background-image: url('../assets/banner-1-institucional.jpg');
+  background-image: url('../assets/banner-1-home.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 .bg-banner-2{
-  background-image: url('../assets/banner-2-colecao.jpg');
+  background-image: url('../assets/banner-2-home.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 .bg-banner-3{
-  background-image: url('../assets/banner-3-produto.jpg');
+  background-image: url('../assets/banner-3-home.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 @media (orientation: portrait) {
   .bg-banner-1{
-    background-image: url('../assets/banner-1-institucional-cell.jpg');
+    background-image: url('../assets/banner-1-home-cell.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   .bg-banner-2{
-    background-image: url('../assets/banner-2-colecao-cell.jpg');
+    background-image: url('../assets/banner-2-home-cell.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   .bg-banner-3{
-    background-image: url('../assets/banner-3-produto-cell.jpg');
+    background-image: url('../assets/banner-3-home-cell.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -244,33 +244,9 @@ main{
   background-position: center top;
   background-size: cover;
 }
-.bg-banner-galeria-2{
-  background-image: url('../assets/banner-2-galeria.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-.bg-banner-galeria-3{
-  background-image: url('../assets/banner-3-galeria.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
 @media (orientation: portrait) {
   .bg-banner-galeria-1{
     background-image: url('../assets/banner-1-galeria-sm.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-  }
-  .bg-banner-galeria-2{
-    background-image: url('../assets/banner-2-galeria-sm.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-  }
-  .bg-banner-galeria-3{
-    background-image: url('../assets/banner-3-galeria-sm.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;

@@ -102,13 +102,13 @@
       <div class="d-sm-none carousel slide carousel-fade carousel-thumbnails carousel-thumbnails-custom" id="carousel-galeria-home"  data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel-galeria-home" data-slide-to="0" class="w-auto active">
-            <img src="assets/galeria-1-thumbnail.jpg">
+            <img src="assets/galeria-1-thumbnail.jpg" alt="Bolsa de Crochê da Clutchet">
           </li>
           <li data-target="#carousel-galeria-home" class="w-auto" data-slide-to="1">
-            <img src="assets/galeria-2-thumbnail.jpg">
+            <img src="assets/galeria-2-thumbnail.jpg"  alt="Bolsa de Crochê da Clutchet">
           </li>
           <li data-target="#carousel-galeria-home" class="w-auto" data-slide-to="2">
-            <img src="assets/galeria-3-thumbnail.jpg">
+            <img src="assets/galeria-3-thumbnail.jpg"  alt="Bolsa de Crochê da Clutchet">
           </li>
         </ol>
         <div class="carousel-inner" role="listbox">
@@ -184,7 +184,7 @@
             <div class="card card-cascade narrower card-ecommerce pt-2">
               <div class="view view-cascade overlay">
                 <img src="assets/destaque-1.jpg" class="card-img-top"
-                     alt="Produto em Destaque - ProdutoPreenchimento">
+                     alt="Produto em Destaque">
               </div>
               <div class="card-body pb-0 card-body-cascade text-center grey-text">
                 <h5>Carteiras</h5>
@@ -425,20 +425,17 @@
     $(document).ready(function () {
       $('#carousel-galeria-home').hammer().on('swipeleft', function () {
         $(this).carousel('next');
-      });
-      $('#carousel-galeria-home').hammer().on('swiperight', function () {
+      }).on('swiperight', function () {
         $(this).carousel('prev');
       });
       $('#carousel-destaques-home').hammer().on('swipeleft', function () {
         $(this).carousel('next');
-      });
-      $('#carousel-destaques-home').hammer().on('swiperight', function () {
+      }).on('swiperight', function () {
         $(this).carousel('prev');
       });
       $('#carousel-intro-home').hammer().on('swipeleft', function () {
         $(this).carousel('next');
-      });
-      $('#carousel-intro-home').hammer().on('swiperight', function () {
+      }).on('swiperight', function () {
         $(this).carousel('prev');
       });
     });
