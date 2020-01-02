@@ -23,6 +23,9 @@
 .texto-vermelho-amarronzado{
   color: #c11802;
 }
+.texto-amarelo-logo{
+  color: #DDD693!important;
+}
 .transparencia-marrom{
   background-color: rgba(85, 74, 38, 0.45) !important;
 }
