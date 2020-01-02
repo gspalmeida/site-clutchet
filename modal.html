@@ -17,7 +17,7 @@
             </div>
             <div class="md-form mb-4">
               <i class="fa fa-phone prefix grey-text"></i>
-              <input type="text" id="modalEntreEmContato-tel" class="form-control">
+              <input type="text" id="modalEntreEmContato-tel" class="form-control" maxlength="14" onkeypress="mascaraTelefone(this)" onchange="mascaraTelefone(this)">
               <label for="modalEntreEmContato-tel">Seu telefone</label>
             </div>
             <div class="md-form mb-4">
@@ -73,7 +73,7 @@
             </div>
             <div class="md-form mb-4">
               <i class="fa fa-phone prefix grey-text"></i>
-              <input type="text" id="modalMonteSuaClutchet-tel" class="form-control">
+              <input type="text" id="modalMonteSuaClutchet-tel" class="form-control" maxlength="14" onkeypress="mascaraTelefone(this)" onchange="mascaraTelefone(this)">
               <label for="modalMonteSuaClutchet-tel">Seu telefone</label>
             </div>
             <div class="md-form mb-4">
@@ -100,3 +100,4 @@
     </div>
   </div>
 </section>
+<div id="checkInclude"></div>
