@@ -19,7 +19,7 @@ html,body,.view {
   }
 }
 @media (min-width: 800px) and (max-width: 850px) {
-  html, body, header, .carousel-halfPage {
+  html, body, .carousel-halfPage {
     height: 100vh;
   }
 }
