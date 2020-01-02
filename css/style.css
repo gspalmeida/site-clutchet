@@ -2,7 +2,7 @@
 .color-marrom-navbar{
   background-color: #554A26!important;
 }
-.color-marrom-escuro-fixedBtn{
+.bgColor-marrom-escuro{
   background-color: #591B1B!important;
 }
 .color-rosa-footer{
@@ -567,6 +567,6 @@ input:-webkit-autofill {
 .input-fix label.active {
   transform: translateY(-100%) !important;
 }
-.textarea-fix label.active{
-  transform: translateY(-30%) !important;
+.textarea-fix label:not(.active){
+  top: 0!important;
 }
