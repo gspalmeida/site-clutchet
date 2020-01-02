@@ -27,24 +27,3 @@
     </p>
   </div>
 </footer>
-
-<script>
-    //    ScrolSpy da Navbar
-    var pagina = window.location.pathname;
-    var start = pagina.lastIndexOf("/");
-    var stop = pagina.lastIndexOf(".");
-    if(pagina.substr(start+1,stop-start-1)==='') {
-        $(document).ready(function () {
-            $('#navbar-index').addClass('active');
-        });
-    }else{
-        $(document).ready( function () {
-            $('#navbar-' + pagina.substr(start + 1, stop - start - 1)).addClass('active');
-        });
-    }
-    //    ScrollToTop Navbar
-    function scrollToTop() {
-        $('body, html').animate({scrollTop: 0});
-    }
-
-</script>
