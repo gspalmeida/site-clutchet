@@ -14,6 +14,15 @@
 .transparencia-azul{
   background-color: #2E554E4d!important;
 }
+.texto-azul-escuro{
+  color: #10438f;
+ }
+.texto-roxo{
+  color: #60008F;
+}
+.texto-vermelho-amarronzado{
+  color: #c11802;
+}
 .transparencia-marrom{
   background-color: #554A2633!important;
 }
@@ -88,6 +97,10 @@
 }
 .btn-azul{
   background-color: #1D5273!important;
+}
+.btn-roxo{
+  background-color: #60008F!important;
+  color: #FFFFFF!important;
 }
 .subtitle-cor{
   color: #00101b!important;
