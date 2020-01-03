@@ -221,7 +221,7 @@ main{
 .bg-banner-1{
   background-image: url('../assets/banner-1-home.jpg');
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: right center;
   background-size: cover;
 }
 .bg-banner-2{
@@ -240,7 +240,7 @@ main{
   .bg-banner-1{
     background-image: url('../assets/banner-1-home-cell.jpg');
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center bottom;
     background-size: cover;
   }
   .bg-banner-2{
