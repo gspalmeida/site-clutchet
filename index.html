@@ -97,7 +97,7 @@
         </div>
         <div class="col-12">
           <p class="text-center subtitle-cor mb-0 size-12rem">Conheça modelos de Clutchets exclusivas e descubra qual mais combina com seu look!</p>
-          <p class="text-center subtitle-cor font-italic">*Modelos disponíveis na galeria podem não estar mais disponíveis para venda</p>
+          <p class="text-center subtitle-cor font-italic size-08rem">*Modelos disponíveis na galeria podem não estar mais disponíveis para venda</p>
         </div>
       </div>
       <div class="d-sm-none carousel slide carousel-fade carousel-thumbnails carousel-thumbnails-custom" id="carousel-galeria-home"  data-ride="carousel">
@@ -127,37 +127,25 @@
           </div>
         </div>
       </div>
-      <div class="row d-none d-sm-flex mt-3 ">
+      <div class="row d-none d-sm-flex mt-3">
         <div class="col-10 mx-auto">
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-sm-6 col-lg-4">
-              <div id="mdb-lightbox-ui"></div>
-              <div class=" overlay zoom z-depth-3 mdb-lightbox no-margin">
-                <figure class="mb-3 ">
-                  <a href="assets/galeria-1.jpg" data-size="1920x1440">
-                    <img src="assets/galeria-1.jpg" class="img-fluid z-depth-1" alt="Imagem Galeria - Bolsa 1">
-                  </a>
-                </figure>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class=" overlay zoom z-depth-3 mdb-lightbox no-margin">
-                <figure class="mb-3">
-                  <a href="assets/galeria-2.jpg" data-size="1920x1440">
-                    <img src="assets/galeria-2.jpg" class="img-fluid z-depth-1" alt="Imagem Galeria - Bolsa 2">
-                  </a>
-                </figure>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class=" overlay zoom z-depth-3 mdb-lightbox no-margin">
-                <figure class="mb-3">
-                  <a href="assets/galeria-3.jpg" data-size="853x640">
-                    <img src="assets/galeria-3.jpg" class="img-fluid z-depth-1" alt="Imagem Galeria - Bolsa 3">
-                  </a>
-                </figure>
-              </div>
-            </div>
+          <div id="mdb-lightbox-ui"></div>
+          <div class="mdb-lightbox d-flex flex-wrap">
+            <figure class="mb-3 px-3 col-sm-6 col-lg-4 zoom overlay">
+              <a href="assets/galeria-1.jpg" data-size="1920x1440">
+                <img src="assets/galeria-1.jpg" class="img-fluid z-depth-3" alt="Imagem Galeria - Bolsa 1">
+              </a>
+            </figure>
+            <figure class="mb-3 px-3 col-sm-6 col-lg-4 zoom overlay">
+              <a href="assets/galeria-2.jpg" data-size="1920x1440">
+                <img src="assets/galeria-2.jpg" class="img-fluid z-depth-3" alt="Imagem Galeria - Bolsa 2">
+              </a>
+            </figure>
+            <figure class="mb-3 px-3 col-sm-6 col-lg-4 zoom overlay mx-auto">
+              <a href="assets/galeria-3.jpg" data-size="853x640">
+                <img src="assets/galeria-3.jpg" class="img-fluid z-depth-3" alt="Imagem Galeria - Bolsa 3">
+              </a>
+            </figure>
           </div>
         </div>
       </div>
@@ -418,7 +406,7 @@
   <script>
     // MDB Lightbox Init
     $(function () {
-    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+      $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
     });
     $(document).ready(function () {
       $('#carousel-galeria-home').hammer().on('swipeleft', function () {
