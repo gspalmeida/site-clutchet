@@ -179,6 +179,11 @@ main{
     width: 75%!important;
   }
 }
+.hr-custom-footer{
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  width: 50px;
+}
 /*Modal Fluid Custom*/
 @media (max-width: 425px) {
   .modal-dialog.cascading-modal{
