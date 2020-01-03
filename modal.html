@@ -88,8 +88,8 @@
             </div>
             <div class="md-form textarea-fix">
               <i class="fas fa-paragraph prefix grey-text"></i>
-              <textarea type="text" id="modalMonteSuaClutchet-detalhes" class="md-textarea form-control" rows="4" placeholder="Ex: Bolsa média com franjas, etc..."></textarea>
-              <label for="modalMonteSuaClutchet-detalhes">Detalhes da sua Clutchet</label>
+              <textarea type="text" id="modalMonteSuaClutchet-detalhes" class="md-textarea form-control" onfocusout="resetTextArea(this.value);" rows="4" placeholder="Ex: Bolsa média com franjas, etc..."></textarea>
+              <label for="modalMonteSuaClutchet-detalhes" id="modalMonteSuaClutchet-detalhes-label">Detalhes da sua Clutchet</label>
             </div>
           </div>
           <div class="text-center">
@@ -101,3 +101,10 @@
   </div>
 </section>
 <div id="checkInclude"></div>
+<script>
+  function resetTextArea(value) {
+    if (value===''){
+      $('#modalMonteSuaClutchet-detalhes-label').removeClass('active');
+    }
+  }
+</script>
