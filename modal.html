@@ -9,35 +9,35 @@
             <hr>
             <p class="w-responsive mx-auto">Olá, deixe-nos a sua mensagem e em breve retornaremos seu contato.</p>
           </div>
-          <form>
+          <form id="form-modal-contato">
             <div class="md-form mb-4">
               <i class="fas fa-user prefix grey-text"></i>
-              <input type="text" id="modalEntreEmContato-nome" class="form-control">
+              <input type="text" id="modalEntreEmContato-nome" name="nome" class="form-control">
               <label for="modalEntreEmContato-nome">Nome</label>
             </div>
             <div class="md-form mb-4">
               <i class="fa fa-phone prefix grey-text"></i>
-              <input type="text" id="modalEntreEmContato-tel" class="form-control" maxlength="14" onkeypress="mascaraTelefone(this)" onchange="mascaraTelefone(this)">
+              <input type="text" id="modalEntreEmContato-tel" name="telefone" class="form-control" maxlength="14" onkeypress="mascaraTelefone(this)" onchange="mascaraTelefone(this)">
               <label for="modalEntreEmContato-tel">Seu telefone</label>
             </div>
             <div class="md-form mb-4">
               <i class="fas fa-envelope prefix grey-text"></i>
-              <input type="email" id="modalEntreEmContato-email" class="form-control">
+              <input type="email" id="modalEntreEmContato-email" name="email" class="form-control">
               <label for="modalEntreEmContato-email">E-mail</label>
             </div>
-            <div class="md-form mb-4">
+            <div class="md-form mb-4 optional">
               <i class="fab fa-instagram prefix grey-text"></i>
-              <input type="text" id="modalEntreEmContato-instagram" class="form-control">
+              <input type="text" id="modalEntreEmContato-instagram" name="instagram" class="form-control">
               <label for="modalEntreEmContato-instagram">Seu instagram (opcional)</label>
             </div>
             <div class="md-form">
               <i class="fas fa-paragraph prefix grey-text"></i>
-              <textarea type="text" id="modalEntreEmContato-mensagem" class="md-textarea form-control" rows="3"></textarea>
+              <textarea type="text" id="modalEntreEmContato-mensagem" name="mensagem" class="md-textarea form-control" rows="3"></textarea>
               <label for="modalEntreEmContato-mensagem">Digite aqui a sua mensagem</label>
             </div>
           </form>
           <div class="text-center">
-            <button class="btn bgColor-marrom-escuro">ENVIAR</button>
+            <button class="btn bgColor-marrom-escuro" onclick="enviaFormModalContato()">ENVIAR</button>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
             <h6 class="font-italic">Bolsas sob encomenda a partir de R$: 320,00</h6>
           </div>
           <hr>
-          <div class="form">
+          <form id="form-modal-monteSuaClutchet">
             <div class="mb-5">
               <p class="text-center mb-0">
                 Quando se põe carinho em cada ponto, uma bolsa de crochê é bem mais do que artesanato.
@@ -68,32 +68,32 @@
             </div>
             <div class="md-form mb-4">
               <i class="fas fa-user prefix grey-text"></i>
-              <input type="text" id="modalMonteSuaClutchet-nome" class="form-control">
+              <input type="text" id="modalMonteSuaClutchet-nome" name="nome" class="form-control">
               <label for="modalMonteSuaClutchet-nome">Seu nome</label>
             </div>
             <div class="md-form mb-4">
               <i class="fa fa-phone prefix grey-text"></i>
-              <input type="text" id="modalMonteSuaClutchet-tel" class="form-control" maxlength="14" onkeypress="mascaraTelefone(this)" onchange="mascaraTelefone(this)">
+              <input type="text" id="modalMonteSuaClutchet-tel" name="telefone" class="form-control" maxlength="14" onkeypress="mascaraTelefone(this)" onchange="mascaraTelefone(this)">
               <label for="modalMonteSuaClutchet-tel">Seu telefone</label>
             </div>
             <div class="md-form mb-4">
               <i class="fas fa-envelope prefix grey-text"></i>
-              <input type="text" id="modalMonteSuaClutchet-email" class="form-control">
+              <input type="text" id="modalMonteSuaClutchet-email" name="email" class="form-control">
               <label for="modalMonteSuaClutchet-email">Seu e-mail</label>
             </div>
-            <div class="md-form mb-4">
+            <div class="md-form mb-4 optional">
               <i class="fab fa-instagram prefix grey-text"></i>
-              <input type="text" id="modalMonteSuaClutchet-instagram" class="form-control">
+              <input type="text" id="modalMonteSuaClutchet-instagram" name="instagram" class="form-control">
               <label for="modalMonteSuaClutchet-instagram">Seu instagram (opcional)</label>
             </div>
             <div class="md-form textarea-fix">
               <i class="fas fa-paragraph prefix grey-text"></i>
-              <textarea type="text" id="modalMonteSuaClutchet-detalhes" class="md-textarea form-control" onfocusout="resetTextArea(this.value);" rows="4" placeholder="Ex: Bolsa média com franjas, etc..."></textarea>
+              <textarea type="text" id="modalMonteSuaClutchet-detalhes" name="mensagem" class="md-textarea form-control" onfocusout="resetTextArea(this.value);" rows="4" placeholder="Ex: Bolsa média com franjas, etc..."></textarea>
               <label for="modalMonteSuaClutchet-detalhes" id="modalMonteSuaClutchet-detalhes-label">Detalhes da sua Clutchet</label>
             </div>
-          </div>
+          </form>
           <div class="text-center">
-            <button class="btn bgColor-marrom-escuro">ENVIAR</button>
+            <button class="btn bgColor-marrom-escuro" onclick="enviaFormModalMonteSuaClutchet()">ENVIAR</button>
           </div>
         </div>
       </div>
@@ -105,6 +105,79 @@
   function resetTextArea(value) {
     if (value===''){
       $('#modalMonteSuaClutchet-detalhes-label').removeClass('active');
+    }
+  }
+  function enviaFormModalMonteSuaClutchet() {
+    var validado = 1;
+    $("form#form-modal-monteSuaClutchet > div:not(.optional) > input, form#form-modal-monteSuaClutchet > div > textarea").each(function () {
+      if(this.value==""){
+        toastr.error('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Telefone e Mensagem');
+        validado  = 0;
+        return false
+      }
+    });
+    if (validado === 1){
+      ShowLoader();
+      var formData = $("#form-modal-monteSuaClutchet").serializeArray();
+      var dataObj = {};
+      $(formData).each(function(i, field){
+        dataObj[field.name] = field.value;
+      });
+      dataObj["submit"] = 'ok';
+
+      $.ajax({
+        type: "POST",
+        url: "php/handlerSendEmail.php",
+        data: dataObj,
+        dataType: "json",
+        success: function (data) {
+          if(data.tipo==="sucesso"){
+            HideLoader();
+            toastr.success(data.mensagem,data.titulo);
+          }
+          else{
+            HideLoader();
+            toastr.error(data.mensagem,data.titulo);
+          }
+        }
+      });
+    }
+  }
+
+  function enviaFormModalContato() {
+    var validado = 1;
+    $("form#form-modal-contato > div:not(.optional) > input, form#form-modal-contato > div > textarea").each(function () {
+      if(this.value==""){
+        toastr.error('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Telefone, Email e Mensagem.');
+        validado  = 0;
+        return false
+      }
+    });
+    if (validado === 1){
+      ShowLoader();
+      var formData = $("#form-modal-contato").serializeArray();
+      var dataObj = {};
+      $(formData).each(function(i, field){
+        dataObj[field.name] = field.value;
+      });
+      dataObj["submit"] = 'ok';
+
+      $.ajax({
+        type: "POST",
+        url: "php/handlerSendEmail.php",
+        data: dataObj,
+        dataType: "json",
+        success: function (data) {
+          if(data.tipo==="sucesso"){
+            HideLoader();
+            toastr.success(data.mensagem,data.titulo);
+          }
+          else{
+            HideLoader();
+            toastr.error(data.mensagem,data.titulo);
+          }
+        }
+      });
     }
   }
 </script>

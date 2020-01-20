@@ -71,7 +71,7 @@ if(IsInjected($phone))
   echo json_encode($msgRetorno);
   exit;
 }
-if(IsInjected($instragram))
+if(IsInjected($instagram))
 {
   $msgRetorno = ['titulo'=>"Seu contato foi barrado por se assemelhar a um mail injection!",
                  'mensagem'=>"Verifique os dados digitados e tente novamente!",
@@ -104,7 +104,7 @@ $mailer->FromName = "Lead do Site -".$name; //Nome que aparece pra quem recebe
 //Pessoa que RECEBE o email
 $mailer->addAddress('contato@clutchet.com.br');
 //Para onde RESPONDER o email
-$mailer->addReplyTo($visitor_email, $name);
+$mailer->addReplyTo($visitor_email, 'Olá, '.$name);
 //Escreve o Email
 $mailer->CharSet = 'UTF-8';
 $mailer->isHTML(true);
@@ -150,7 +150,7 @@ if (!$enviado){
                     <p><strong>Nome: </strong>".$name."</p>
                     <p><strong>Telefone: </strong>".$phone."</p>
                     <p><strong>Email: </strong>".$visitor_email."</p>
-                    <p><strong>Assunto:</strong>" . $instragram . "</p>
+                    <p><strong>Assunto:</strong>" . $instagram . "</p>
                     <p><strong>Mensagem:</strong><br/>".$message."</p>
                     <p><br/><br/><br/><strong>Erro:</strong><br/>".$enviado."</p>";
 
