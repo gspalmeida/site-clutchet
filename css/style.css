@@ -577,7 +577,7 @@ body#body-solicitarOrcamento{
 /* Remove chrome autofil background color */
 @-webkit-keyframes autofill {
   to {
-    color: #fff;
+    color: #000000;
     background: transparent;
   }
 }
