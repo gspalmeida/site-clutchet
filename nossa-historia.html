@@ -17,33 +17,32 @@
   <link rel="shortcut icon" type="image/png" href="assets/favicon1.png"/>
 </head>
 <body>
-<header id="topo">
-  <div data-include="navbar"></div>
-  <div class="view " style="max-height: 100vh; background-color: #00103857">
-    <video id="video-intro-destinos" poster="assets/bg-atendimento-cliente.mp4" playsinline autoplay muted loop>
-      <source src="assets/bg-atendimento-cliente.mp4" type="video/mp4">
-    </video>
-    <div class=" mask rgba-gradient d-flex justify-content-center align-items-center">
-      <div class="container h-100 d-flex justify-content-center align-items-center text-white">
-        <div class="row pt-5 mt-3">
-          <div class="col-md-12 mb-3">
-            <div class="intro-info-content text-center">
-              <h4 class="text-uppercase mt-1 titulo-intro size-3rem fw-500 ">
-               Clutchet, Carinho em Cada Ponto
-              </h4>
-              <hr style="border-color: #ffffff" class="offset-2 col-8">
-              <p class="size-15rem texto-intro">Conheça melhor a nossa história e como trabalhamos</p>
-              <a href="#inicio" class="btn btn-rounded btn-outline-white waves-effect waves-light">
-                <i class="fas fa-chevron-down"></i>
-              </a>
+  <header id="topo">
+    <div data-include="navbar"></div>
+    <div class="view " style="max-height: 100vh; background-color: #00103857">
+      <video id="video-intro-destinos" poster="assets/bg-atendimento-cliente.mp4" playsinline autoplay muted loop>
+        <source src="assets/bg-atendimento-cliente.mp4" type="video/mp4">
+      </video>
+      <div class=" mask rgba-gradient d-flex justify-content-center align-items-center">
+        <div class="container h-100 d-flex justify-content-center align-items-center text-white">
+          <div class="row pt-5 mt-3">
+            <div class="col-md-12 mb-3">
+              <div class="intro-info-content text-center">
+                <h4 class="text-uppercase mt-1 titulo-intro size-3rem fw-500 ">
+                 Clutchet, Carinho em Cada Ponto
+                </h4>
+                <hr style="border-color: #ffffff" class="offset-2 col-8">
+                <p class="size-15rem texto-intro">Conheça melhor a nossa história e como trabalhamos</p>
+                <a href="#inicio" class="btn btn-rounded btn-outline-white waves-effect waves-light">
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
-
+  </header>
   <main id="inicio">
     <section class="container text-center">
       <h1 class="font-weight-bold text-center h1 my-5">Quem Somos?</h1>
@@ -97,6 +96,35 @@
   <script type="text/javascript" src="js/include.js"></script>
   <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/galileoJS.js"></script>
+  <script>
+    function calculaNovaPosicaoHorizontal(elementoParaReposicionar){
+      var   videoWidth          = elementoParaReposicionar.width();
+      var   windowWidth         = $(window).width();
+      var   posicaoVideoPlayer  = (windowWidth-videoWidth)/2;
+      return posicaoVideoPlayer;
+    }
+    function calculaNovaPosicaoVertical(elementoParaReposicionar){
+      var   videoHeight          = elementoParaReposicionar.height();
+      var   windowHeight         = $(window).height();
+      var   posicaoVideoPlayer  = (windowHeight-videoHeight)/2;
+      return posicaoVideoPlayer;
+    }
+    function videoBgResponsiveness(){
+      const razaoProporcaoTela  = 1.777777778;
+      var   videoPlayer         = $('#video-intro-destinos');
+      var   windowWidth         = $(window).width();
+      var   windowHeight        = $(window).height();
+      var   proporcaoTela       = windowWidth/windowHeight;
+      if (proporcaoTela <= razaoProporcaoTela){
+        videoPlayer.css('width', 'auto').css('height', '100vh').css("transform","translate("+calculaNovaPosicaoHorizontal(videoPlayer)+"px,0)");
+      }else{
+        videoPlayer.css('height', 'auto').css('width', '100vw').css("transform","translate(0,"+calculaNovaPosicaoVertical(videoPlayer)+"px)");
+      }
+    }
+    //TODO Otmizar futuramente essa logica pq atualizar a cada frame do resize é desperdicio
+    $(videoBgResponsiveness());
+    window.onresize = videoBgResponsiveness;
+  </script>
 </body>
 
 </html>
